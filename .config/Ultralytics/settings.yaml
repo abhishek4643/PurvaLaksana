@@ -1,0 +1,16 @@
+settings_version: 0.0.4
+datasets_dir: datasets
+weights_dir: weights
+runs_dir: runs
+uuid: ''
+sync: false
+api_key: ''
+runs_dir: runs
+weights_dir: weights
+datasets_dir: datasets
+autosave: true
+show_download_progress: true
+default_model_path: brain123.pt
+disable_analytics: true
+update_check: false
+legacy_mode: true 
