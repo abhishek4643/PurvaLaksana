@@ -20,8 +20,7 @@ BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Set your API key for Google Vision and Generative AI
-GOOGLE_API_KEY = "AQ.Ab8RN6LDd4hS9PrqL1xWxEqMJa33cJhWADEoElgklrh3crradQ"
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Initialize Google Generative AI with fixed settings
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -290,7 +289,7 @@ def analyze_image(message, image_path):
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     welcome_text = """
-🏥 Welcome to EscobarsCareAI! 🤖
+🏥 Welcome to PurvaLaksana! 🤖
 
 I'm your medical diagnostic assistant, powered by advanced AI technology.
 
@@ -315,7 +314,7 @@ def handle_text_messages(message):
     else:
         try:
             response = GEMINI_MODEL.generate_content(
-                "You are EscobarsCareAI, a medical AI assistant. " + message.text
+                "You are PurvaLaksana, a medical AI assistant. " + message.text
             )
             bot.reply_to(message, response.text)
         except Exception as e:
@@ -431,5 +430,5 @@ def extract_values_from_response(response_text):
         }
 
 if __name__ == "__main__":
-    print("🤖 EscobarsCareAI Bot is running...")
+    print("🤖 PurvaLaksana Bot is running...")
     bot.polling(none_stop=True)

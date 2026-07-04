@@ -107,7 +107,7 @@ def analyze_image(uploaded_file, patient_name, test_type):
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     
     # Display the uploaded image
-    st.image(img_rgb, caption=f"Uploaded {test_type} Image", use_column_width=True)
+    st.image(img_rgb, caption=f"Uploaded {test_type} Image", use_container_width=True)
     
     # Analyze the image based on test type
     if test_type == "Brain MRI":

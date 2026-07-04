@@ -1376,7 +1376,10 @@ def find_nearby_hospitals(lat, lon, radius=5000):
         );
         out center;
         """
-        response = requests.post(overpass_url, data=query, timeout=10)
+        headers = {
+            'User-Agent': 'PurvaLaksana/1.0 (Health Application)'
+        }
+        response = requests.post(overpass_url, data=query, headers=headers, timeout=10)
         
         if response.status_code != 200:
             st.warning("Hospital search service is temporarily unavailable.")
@@ -1481,6 +1484,11 @@ def save_analysis_to_database(analysis_data):
         st.warning("Could not save analysis results — database is unreachable. Your results are still displayed above.")
         return False
     except Exception as e:
+        error_message = str(e).lower()
+        if "getaddrinfo failed" in error_message or "failed to establish a new connection" in error_message or "name or service not known" in error_message:
+            st.warning("Could not save analysis results — database is unreachable. Your results are still displayed above.")
+            return False
+            
         st.warning(f"Could not save analysis results: {str(e)}")
         
         # Provide helpful guidance if specific columns are missing
