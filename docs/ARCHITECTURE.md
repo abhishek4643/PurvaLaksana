@@ -17,6 +17,11 @@ Purva Laksana follows a multi-modal decoupled architecture connecting patient we
   <img src="./architecture.svg" alt="Purva Laksana Architecture Flow" width="100%" />
 </p>
 
+* **Patient Intake (Streamlit & Vitals)**: Multi-modal scan dropzone, Google Fit API biometric integration, and Telegram bot diagnostic triage.
+* **Vision AI Core (PyTorch + YOLOv11)**: Multi-organ deep learning ensembles for brain MRI, bone fractures, skin lesions, and retinal scans.
+* **Diagnostics (Risk Scoring Engine)**: Multi-factor decision fusion combining computer vision models with real-time vitals and clinical explanation reports.
+* **Clinical Store (EHR & Telemetry)**: Encrypted longitudinal vitals persistence, automated PDF report generation, and HIPAA-compliant data isolation.
+
 ---
 
 ### 2. Technology Stack

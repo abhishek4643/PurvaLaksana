@@ -39,7 +39,7 @@
   <g transform="translate(24, 12)">
     <rect width="320" height="20" rx="10" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
     <circle cx="10" cy="10" r="3.5" fill="#10B981"/>
-    <text x="20" y="14" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" letter-spacing="0.05em">PURVA LAKSANA &bull; HEALTHCARE AI TOPOLOGY</text>
+    <text x="20" y="14" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" letter-spacing="0.05em">PURVA LAKSANA &#8226; HEALTHCARE AI TOPOLOGY</text>
   </g>
 
   <!-- ==================== CARD 1: PATIENT INTAKE & WEARABLES ==================== -->
@@ -74,7 +74,7 @@
     </g>
     <!-- Footer Badge -->
     <rect x="14" y="198" width="167" height="18" rx="4" fill="#DBEAFE"/>
-    <text x="97.5" y="210" text-anchor="middle" fill="#1E40AF" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">Streamlit &bull; Python 3.10+</text>
+    <text x="97.5" y="210" text-anchor="middle" fill="#1E40AF" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">Streamlit &#8226; Python 3.10+</text>
   </g>
 
   <!-- Connector 1 -->
@@ -118,7 +118,7 @@
     </g>
     <!-- Footer Badge -->
     <rect x="14" y="198" width="167" height="18" rx="4" fill="#D1FAE5"/>
-    <text x="97.5" y="210" text-anchor="middle" fill="#047857" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">PyTorch .pt &bull; OpenCV Pipeline</text>
+    <text x="97.5" y="210" text-anchor="middle" fill="#047857" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">PyTorch .pt &#8226; OpenCV Pipeline</text>
   </g>
 
   <!-- Connector 2 -->
@@ -204,7 +204,7 @@
     </g>
     <!-- Footer Badge -->
     <rect x="14" y="198" width="167" height="18" rx="4" fill="#EDE9FE"/>
-    <text x="97.5" y="210" text-anchor="middle" fill="#6D28D9" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">Encrypted DB &bull; Audit Trail</text>
+    <text x="97.5" y="210" text-anchor="middle" fill="#6D28D9" font-family="ui-monospace, monospace" font-size="8.5" font-weight="600">Encrypted DB &#8226; Audit Trail</text>
   </g>
 
   <!-- Bottom Legend Bar -->
