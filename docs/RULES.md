@@ -63,3 +63,4 @@ This document specifies the non-negotiable coding conventions, PyTorch execution
       ...
   ```
 - Separate UI rendering logic from deep learning inference subroutines. Place reusable computer vision helpers in `vision_analyzer.py`.
+

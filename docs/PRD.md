@@ -72,3 +72,4 @@ In primary healthcare clinics, rural outreach facilities, and telemedicine consu
 - **Out of Scope (Deferred to v2.0)**:
   - Real-time video telemedicine consultation stream.
   - Direct HL7/FHIR hospital EHR server integration.
+

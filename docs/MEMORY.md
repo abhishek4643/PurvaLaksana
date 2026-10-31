@@ -57,3 +57,4 @@ This document maintains operational context, key architectural decisions, and ru
 - **Model Caching**: Always load PyTorch model weights via `@st.cache_resource` to avoid severe CPU thrashing.
 - **Inference Mode**: Always wrap forward passes in `torch.no_grad()` and ensure models are set to `.eval()`.
 - **Clinical Governance**: Prominent assistive triage disclaimers must never be omitted or hidden in any UI view or generated PDF report.
+
